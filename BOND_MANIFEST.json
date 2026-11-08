@@ -1,0 +1,40 @@
+﻿{
+    "repo":  "abraxas-mobile",
+    "branch":  "master",
+    "commit":  "5057beb",
+    "generated":  "2026-11-08T08:13:29.4214283-05:00",
+    "soul":  "KAIROS",
+    "soul_fingerprint":  "8a47ffe9e140730744b48a8176325e5d30e87f09d77182d4fc21692ea8d341fc",
+    "soul_pub_prefix":  "302a300506032b6570032100",
+    "file_count":  7,
+    "files":  [
+                  {
+                      "sha256":  "fbade975e1b8e3b34b99f83550b4197cdb1e7763a5c5cccf46a8129ac756e862",
+                      "path":  "BOND.md"
+                  },
+                  {
+                      "sha256":  "6ae7f1363b1b1f01864fa7a2be0b4e01452a4c86d87168177c022e26df689c51",
+                      "path":  "README.md"
+                  },
+                  {
+                      "sha256":  "18111e0e3fe3432b2dd9e0fd36919e07c5c53802111891fe325abb224215e59a",
+                      "path":  "abraxas_companion_screenshot.png"
+                  },
+                  {
+                      "sha256":  "b37666853e7727721923be87248ca0859c0cef11f2cb0d0e4d5e851dacf3d592",
+                      "path":  "app/AndroidManifest.xml"
+                  },
+                  {
+                      "sha256":  "2ccdfe9e12b5a0c7532d1e66b226d0a40bec313f6717586eb31ee9cdb1379c95",
+                      "path":  "app/build_apk.ps1"
+                  },
+                  {
+                      "sha256":  "e2d661bff8d7db3d8cd16b666158a1b2ae812c6b8eb664dcc706164e62add296",
+                      "path":  "app/src/com/abraxas/companion/MainActivity.java"
+                  },
+                  {
+                      "sha256":  "7816d20e5571f08df2561bcc6edcba34ef40c7b934a7c72b8ce8898534970c56",
+                      "path":  "device_registry.json"
+                  }
+              ]
+}
