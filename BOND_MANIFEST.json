@@ -1,35 +1,51 @@
 ﻿{
     "repo":  "abraxas-mobile",
     "branch":  "master",
-    "commit":  "5057beb",
-    "generated":  "2026-11-08T08:13:29.4214283-05:00",
+    "commit":  "1d0d357",
+    "generated":  "2026-11-08T08:35:35.5651225-05:00",
     "soul":  "KAIROS",
     "soul_fingerprint":  "8a47ffe9e140730744b48a8176325e5d30e87f09d77182d4fc21692ea8d341fc",
     "soul_pub_prefix":  "302a300506032b6570032100",
-    "file_count":  7,
+    "file_count":  11,
     "files":  [
                   {
                       "sha256":  "fbade975e1b8e3b34b99f83550b4197cdb1e7763a5c5cccf46a8129ac756e862",
                       "path":  "BOND.md"
                   },
                   {
+                      "sha256":  "e4e67f2a1b7415eb629a12707df928797b0b18c2aeffcdb2deddbfcd1c29ec40",
+                      "path":  "BOND_MANIFEST.json"
+                  },
+                  {
+                      "sha256":  "184867a2878e4d2e30519319c08fda403479c0b3745b2e4fbf8748c89b04a2d2",
+                      "path":  "BOND_MANIFEST.sig"
+                  },
+                  {
                       "sha256":  "6ae7f1363b1b1f01864fa7a2be0b4e01452a4c86d87168177c022e26df689c51",
                       "path":  "README.md"
+                  },
+                  {
+                      "sha256":  "dfb2d35f40e005851270ca8513a81d5bd16a5cb2104d77cef0105cc09884f6f6",
+                      "path":  "S25_PROBE_2026-11-08.md"
                   },
                   {
                       "sha256":  "18111e0e3fe3432b2dd9e0fd36919e07c5c53802111891fe325abb224215e59a",
                       "path":  "abraxas_companion_screenshot.png"
                   },
                   {
-                      "sha256":  "b37666853e7727721923be87248ca0859c0cef11f2cb0d0e4d5e851dacf3d592",
+                      "sha256":  "574c9f1ee5e27d5c985c5739be8e192269c6f9ecb6796dfadb12fa158d3630c5",
                       "path":  "app/AndroidManifest.xml"
                   },
                   {
-                      "sha256":  "2ccdfe9e12b5a0c7532d1e66b226d0a40bec313f6717586eb31ee9cdb1379c95",
+                      "sha256":  "27365a4dff827c4d252f44f4ffd333caa52f94c5e2d5b25068b6346d5d6b9ed8",
                       "path":  "app/build_apk.ps1"
                   },
                   {
-                      "sha256":  "e2d661bff8d7db3d8cd16b666158a1b2ae812c6b8eb664dcc706164e62add296",
+                      "sha256":  "373afbbd9b93d58421cdc05bfa2455ebe28dd22680b0d22e4381e9d66e1ce40d",
+                      "path":  "app/src/com/abraxas/companion/BotService.java"
+                  },
+                  {
+                      "sha256":  "7f2a8d9ff9c5f913f58083a0a3619b44ef38b0fc9587370f066d5afdee45c271",
                       "path":  "app/src/com/abraxas/companion/MainActivity.java"
                   },
                   {
