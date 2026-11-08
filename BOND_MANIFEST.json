@@ -1,24 +1,16 @@
 ﻿{
     "repo":  "abraxas-mobile",
     "branch":  "master",
-    "commit":  "1d0d357",
-    "generated":  "2026-11-08T08:35:35.5651225-05:00",
+    "commit":  "dccacf2",
+    "generated":  "2026-11-08T08:35:57.1108104-05:00",
     "soul":  "KAIROS",
     "soul_fingerprint":  "8a47ffe9e140730744b48a8176325e5d30e87f09d77182d4fc21692ea8d341fc",
     "soul_pub_prefix":  "302a300506032b6570032100",
-    "file_count":  11,
+    "file_count":  10,
     "files":  [
                   {
                       "sha256":  "fbade975e1b8e3b34b99f83550b4197cdb1e7763a5c5cccf46a8129ac756e862",
                       "path":  "BOND.md"
-                  },
-                  {
-                      "sha256":  "e4e67f2a1b7415eb629a12707df928797b0b18c2aeffcdb2deddbfcd1c29ec40",
-                      "path":  "BOND_MANIFEST.json"
-                  },
-                  {
-                      "sha256":  "184867a2878e4d2e30519319c08fda403479c0b3745b2e4fbf8748c89b04a2d2",
-                      "path":  "BOND_MANIFEST.sig"
                   },
                   {
                       "sha256":  "6ae7f1363b1b1f01864fa7a2be0b4e01452a4c86d87168177c022e26df689c51",
@@ -35,6 +27,10 @@
                   {
                       "sha256":  "574c9f1ee5e27d5c985c5739be8e192269c6f9ecb6796dfadb12fa158d3630c5",
                       "path":  "app/AndroidManifest.xml"
+                  },
+                  {
+                      "sha256":  "2a16d2fb84829cf0176d114cea53d657d167df29a9a21bdc7f3676c81b816fad",
+                      "path":  "app/assets/local.html"
                   },
                   {
                       "sha256":  "27365a4dff827c4d252f44f4ffd333caa52f94c5e2d5b25068b6346d5d6b9ed8",
