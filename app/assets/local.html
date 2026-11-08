@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABRASAX Vault</title>
+<style>
+body{background:#0a0a0f;color:#e0e0e0;font-family:monospace;padding:16px}
+.panel{border:1px solid #1a1a2e;border-radius:8px;padding:12px;margin:8px 0;background:#0d0d1a}
+.hex{color:#0f0}.phi{color:#ff0}
+</style>
+</head>
+<body>
+<h1><span class="hex">ABRASAX</span> <span class="phi">UNIFIED</span></h1>
+<div class="panel" id="status">
+  <p>Vault page - offline mode.</p>
+  <p>Brain link: <span id="link">checking...</span></p>
+  <p>Model vault: <span id="vault">checking...</span></p>
+</div>
+<div class="panel">
+  <h3>DNA Encoder (runs on this phone's CPU)</h3>
+  <input id="in" placeholder="text to encode" style="width:90%">
+  <button onclick="encode()">Encode</button>
+  <pre id="out" style="white-space:pre-wrap;word-break:break-all"></pre>
+</div>
+<script>
+var ABRASAX = {
+  PHI: 1.618033988749895,
+  dna: {
+    encode: function(data){
+      var bases=['A','T','G','C'], s='';
+      for(var i=0;i<data.length;i++){var b=data[i];
+        s+=bases[(b>>6)&3]+bases[(b>>4)&3]+bases[(b>>2)&3]+bases[b&3];}
+      return s;
+    },
+    decode: function(s){
+      var map={A:0,T:1,G:2,C:3}, out=[];
+      for(var i=0;i<s.length;i+=4){
+        out.push((map[s[i]]<<6)|(map[s[i+1]]<<4)|(map[s[i+2]]<<2)|map[s[i+3]]);}
+      return new Uint8Array(out);
+    }
+  }
+};
+window.encode = function(){
+  var t = new TextEncoder().encode(document.getElementById('in').value);
+  var strand = ABRASAX.dna.encode(t);
+  var back = new TextDecoder().decode(ABRASAX.dna.decode(strand));
+  document.getElementById('out').textContent =
+    'strand: ' + strand + '\nroundtrip: ' + (back === document.getElementById('in').value ? 'OK' : 'FAIL');
+};
+fetch('http://127.0.0.1:8090/api/health', {signal: AbortSignal.timeout(3000)})
+  .then(function(r){return r.json();})
+  .then(function(j){document.getElementById('link').textContent='UP - '+j.status;})
+  .catch(function(){document.getElementById('link').textContent='DOWN (PC offline or no tunnel)';});
+fetch('file:///android_asset/model/vault.json', {signal: AbortSignal.timeout(3000)})
+  .then(function(r){return r.json();})
+  .then(function(j){document.getElementById('vault').textContent='present - sha256 '+j.sha256.substr(0,12);})
+  .catch(function(){document.getElementById('vault').textContent='not found';});
+</script>
+</body>
+</html>
